@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/1ddbdcc996.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <div class="navbar-big">
@@ -14,11 +17,11 @@
             </div>
             <div class="nav-links">
                 <ul class="links">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Project</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#hero-container">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#container-services">Services</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
                 <div class="navlinks-mobile">
                     <div class="hamburger"></div>
@@ -30,12 +33,15 @@
     </div><br>
 
 <!-- Hero page -->
-<div class="hero-container">
+<div class="hero-container" id="hero-container">
     <div class="hero-small-container">
 <h2>A Frontend Web Developer</h2>
 <h4>A Tutor at TedPrime Hub Support Initiative</h4>
-<p class="myintro"><span>Main Skills:</span> Content/Web Management systems. <br>Expert in HTML5, CSS3, Javascript, Flexbox, <br>Grid Systems, Bootstrap, Tailwind CSS,<br> Git & Github and Vue.js</p>
-<button>More About Me!</button>
+<p class="myintro"><span>Main Skills:</span> Content/Web Management systems. 
+    <br>Expert in HTML5, CSS3, Javascript, Flexbox, 
+    <br>Grid Systems, Bootstrap, Tailwind CSS,<br> 
+    Git & Github and Vue.js</p>
+<button><a href="#about"> About Me!</button></a>
     </div>
     <div class="hero-small-container">
         <img src="assets/images/felix.png" alt="personalpic">
@@ -43,43 +49,69 @@
 </div>
 
 <!-- About -->
-<div class="about">
-    <h4>About Me!</h4>
-    <p>A frontend web developer is responsible for creating the user interface and experience of a website or web application. This includes designing and coding the layout, navigation, and visual elements of the site using languages such as HTML, CSS, and JavaScript. They also ensure that the site is responsive and works across different devices and browsers. Additionally, a frontend web developer may collaborate with designers, backend developers, and other stakeholders to ensure that the site meets the needs of the business or organization.</p>
+<h3>About Me!</h3>
+<div class="about" id="about">
+    
+    <p>A frontend web developer position is responsible for creating 
+        the user interface and experience of a website or web
+         application. This includes designing and coding the layout, 
+         navigation, and visual elements of the site using 
+         languages such as HTML, CSS, and JavaScript for dynamism and functionality. 
+         Also ensure that the site is responsive and works
+          across different devices and browsers. Additionally, 
+          a frontend web developer may collaborate with designers, 
+          backend developers, and other stakeholders to ensure that 
+          the site meets the needs of the business or organization.</p>
+          <p>Whatsapp:<span><a href="https://www.wa.me/+2348062328638"><i class="fa-brands fa-square-whatsapp fa-beat" style="color: #16e32e;"></i></a></span></p>
+             
 </div>
 <br>
-<h4>Technologies</h4>
-<div class="container-services">
+<h3>Technologies</h3>
+<div class="container-services" id="container-services">
     
     <div class="services-small">
+        <img src="assets/images/html.png" alt="" width="70px">
         <h4>HTML5</h4>
         <p>HTML5 is the latest version of the Hypertext Markup Language used to create websites and web applications. It provides new features and improvements over previous versions, such as semantic elements, multimedia support, and form controls.</p>  </div>
     <div class="services-small">
+        <img src="assets/images/css.png" alt="" width="70px">
         <h4>CSS3</h4>
         <p>CSS3 is the latest version of Cascading Style Sheets used to style web pages. It provides new features and improvements over previous versions, such as selectors, box models, and animations.</p> 
     </div>
     <div class="services-small">
+        <img src="assets/images/bootstrap logo.jpeg" alt="" width="70px">
         <h4>Bootstrap</h4>
         <p>Bootstrap is a popular front-end framework used to create responsive and mobile-first websites. It provides pre-designed components and templates that can be easily customized to fit any design.</p></div>
     <div class="services-small">
+        <img src="assets/images/tailwind.png" alt="" width="70px">
         <h4>Tailwind CSS</h4>
         <p>Tailwind CSS is a utility-first CSS framework used to create custom designs with minimal CSS code. It provides pre-designed utility classes that can be combined to create complex layouts and styles.</p> </div>
         <div class="services-small">
+            <img src="assets/images/github.png" alt="" width="70px">
             <h4>Git & Github</h4>
             <p>Git is a version control system used to track changes in code and collaborate with other developers. GitHub is a web-based platform used to host Git repositories and collaborate with other developers.</p> </div>
        
             <div class="services-small">
+                <img src="assets/images/wordpress.jpeg" alt="" width="50px">
                 <h4>Wordpress</h4>
                 <p>WordPress is a popular content management system used to create websites and blogs. It provides a user-friendly interface and a wide range of plugins and themes that can be used to customize the design and functionality of the site.</p> </div>
         <div class="services-small">
+            <img src="assets/images/js.png" alt="" width="70px">
         <h4>Javascript</h4>
         <p>JavaScript is a programming language used to create interactive and dynamic web pages. It can be used to add functionality, validate forms, manipulate the DOM, and create animations</p>   </div>
-    <div class="services-small">
+        <div class="services-small">
+        <img src="assets/images/vue.png" alt="" width="70px">
         <h4>Vue.js</h4>
-        <p>Vue.js is a progressive JavaScript framework used to create user interfaces and single-page applications. It provides a simple and intuitive API for creating reusable components, managing state, and handling events.</p> </div>
+        <p>Vue.js is a progressive JavaScript framework used to create user interfaces and single-page applications. It provides a simple and intuitive API for creating reusable components, managing state, and handling events. I am learning Vue.js presently (in training......)</p> </div>
+<div class="services-small">
+    <img src="assets/images/vue.png" alt="" width="70px">
+    <h4>Vue.js</h4>
+    <p>Vue.js is a progressive JavaScript framework used to create user interfaces and single-page applications. It provides a simple and intuitive API for creating reusable components, managing state, and handling events. I am learning Vue.js presently (in training......)</p> </div>
 </div>
-<div class="project">
-<h4>My Projects</h4>
+<!-- My Projects -->
+<h3>My Projects</h3>
+<div class="project" id="project">
+
 <div class="project-container">
     <div class="project-small">
         <h4>Background Color Clipper</h4>
@@ -101,26 +133,40 @@
         <p>Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum nulla esse natus provident. Amet, id fugiat est sint debitis exercitationem.</p>
         <button>See life Project</button>
     </div>
-       </div>
+       </div></div>
+       <br>
+<div class="contact-us">
+    <div class="contact-us">
+        
+        <form action="afunmibi@gmail.com" onsubmit="return validate()">
+            <legend>Book Appointment!</legend>
+            <input type="text" id="fname" placeholder="Full Name"><br>
+            <!-- <input type="password" id="password" placeholder="Password"><br> -->
+            <input type="email" id="email" placeholder="Email"><br>
+            <button type="submit" >Submit</button>
+        </form>
+        
+    </div>
+    </div>
+
+   <div class="footer-container">
+    <div class="footer-small">
+    <h4>Felix Adewale</h4>
+    <p>Content/Web Management systems. 
+        Expert in HTML5, CSS3, Javascript, Flexbox,
+         Grid Systems, Bootstrap, Tailwind CSS,
+          Git & Github and Vue.js</p>
+   </div> 
+    <div class="footer-small">
+        <h4>Contact Me!</h4>
+        <ul>
+            <li>Whatsapp:<span><a href="https://www.wa.me/+2348062328638"><i class="fa-brands fa-square-whatsapp fa-beat" style="color: #16e32e;"></i></a></span></li>
+            <li>Telephone:<span><i class="fa-duotone fa-mobile fa-beat" style="--fa-primary-color: #f2f4f8; --fa-secondary-color: #06e53e;"></i></span></li>
+            <li>Email:<span></span></li> 
+        </ul>    
+    </div>
 </div>
-<!-- 
-<div class="project">
-<h4>Contact Me!</h4>
-<div class='footer'>
-<div class="contact-container">
-    <div class="contact-small">
-        <p><a href="https://+2348062328638">2348062328638</a></p>
-    </div>
-    <div class="contact-small">
-        <p><a href="https://+2348062328638">Whatsapp</a></p>
-    </div>
-    <div class="contact-small">
-        <p><a href="https://afunmibi@gmail.com">Email</a></p>
-    </div>
-</div></div>
-<div class="">
-    <p>afunmibi&copy;2023. All right reserved</p>
-</div></div> -->
-</body>
-<script src="assets/script/script.js"></script>
-</html>
+<p style="text-align: center; background-color: gray; color: white;">afunmibi@gmail.com&copy;2023. All right reserved</p>
+    </body>
+    <script src="assets/script/script.js"></script>
+    </html>
