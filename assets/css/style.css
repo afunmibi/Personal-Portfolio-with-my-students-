@@ -149,7 +149,9 @@ button:hover{
         margin: 20px;
         padding: 10px;
         border-radius: 10px;
-}
+        position: relative;
+       
+    }
 
 @media (max-width:768px) {
     .container-services{
@@ -165,7 +167,7 @@ button:hover{
         margin: 20px;
         padding: 10px;
         border-radius: 10px;
-    }
+          }
 }
 .project-container{
     display: flex;
@@ -185,6 +187,7 @@ button:hover{
     border-radius: 5px;
     align-items: center;
     text-align: center;
+    transition: all 0.5rem;
 }
 .project{
     background-color: #efefef;
@@ -197,14 +200,19 @@ button:hover{
         align-items: center;
         justify-content: center;
         text-align: center;
-        margin: 25px;
-    }
+        margin: 10px;
+          }
     .project-small{
-        width: 80%;
+        width: 90%;
         align-items: center;
-        margin: 20px 10px;
+        margin: 40px 10px;
         margin-bottom: 20px;
         padding-bottom: 20px;
+        
+         }
+    .myintro{
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -255,4 +263,102 @@ h4{
     text-align: center;
     text-transform: uppercase;
     
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+@media (max-width:768px) {
+    .footer{
+        display: block;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .footer-container{
+        display: block;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 5px;
+        margin-top: 10px;
+        text-align: left;
+        color: white;
+    }
+   .footer-small, ul, li{
+    width: 100%;
+    list-style-type: none;
+    background-color: gray;
+    color: #efefef;
+    border-radius: 5px;
+    padding-top: 10px;
+   }
+    
+}
+.contact-us{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.footer-container{
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+.footer-small, ul{
+    width: 400px;
+    margin: 30px;
+    justify-content: left;
+
+}
+#signature{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 2px;
+    color: lightseagreen;
+    transition: all 0.5s ease-in;
+    margin-top: 40px;
+}
+h3:hover{
+    background-color: blue;
+    color: white; 
+}
+
+/* contact us */
+/*my comment here*/
+form{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    margin: auto;
+    background-color: blueviolet;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input{
+    padding: 5px;
+    margin: 5px;
+
+}
+button{
+    padding: 10px;
+    margin: 20px;
+    border-radius: 8px;
+    transition: all 0.2rem transform;
+}
+Button:hover{
+    transform: translateY(.25rem);
+    background-color: brown;
+    color: white;
+}
+input:focus{
+    border-radius: 3px;
+    border: 3px solid red;
 }
