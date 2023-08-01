@@ -1,33 +1,31 @@
-const hamburger = document.querySelector('.navlinks-mobile');
-const navLinks = document.querySelector('.links');
+// add class navbarDark on navbar scroll
+const header = document.querySelector('.navbar');
+console.log(header)
+window.onscroll = function() {
+    const top = window.scrollY;
+    if(top >=100) {
+        header.classList.add('navbarDark');
+    }
+    else {
+        header.classList.remove('navbarDark');
+    }
+}
+// collapse navbar after click on small devices
+const navLinks = document.querySelectorAll('.nav-item')
+const menuToggle = document.getElementById('navbarSupportedContent')
 
-hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-});
+navLinks.forEach((l) => {
+    l.addEventListener('click', () => { new bootstrap.Collapse(menuToggle).toggle() })
+})
 
-// Contact us
-function validate(){
-    let fname = document.getElementById('fname');
-    let password = document.getElementById('password');
-    let email = document.getElementById('email');
-    
-        if(fname.value.trim() === ""){
-            alert('Enter your Full Name');
-            return false;
-            }
-    
-            else if(password.value.trim() ===""){
-                alert('Enter your password');
-                return false;
-            }
-    
-            else if(email.value.trim() ===""){
-                alert('Enter your email');
-                return false;
-            }
-            
-            else{
-                alert('Your message has been recorded')
-            }
-            }
-    
+
+
+// form validation
+document.querySelector('.btn').addEventListener('click', function(){
+    let form-control = document.querySelector('.form-control').value;
+    if(form-control === " "){
+        alert('Input must be filled'); 
+        }else{
+            alert('Message received');
+        }
+})
