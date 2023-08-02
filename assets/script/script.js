@@ -21,11 +21,19 @@ navLinks.forEach((l) => {
 
 
 // form validation
+
+
 document.querySelector('.btn').addEventListener('click', function(){
-    let form-control = document.querySelector('.form-control').value;
-    if(form-control === " "){
-        alert('Input must be filled'); 
-        }else{
-            alert('Message received');
-        }
+    const name = document.getElementById('name');
+    const email = document.getElementById('email');
+    const subject = document.getElementById('subject');
+    const comment = document.getElementById{'comment'};
+
+    if(name.value.trim() === ""|| email.value.trim() === ""||subject.value.trim() === ""||comment.value.trim()){
+        alert('Name field cannot be emptied');
+    } else{
+console.log('Message saved.')
+    }
+
+
 })
