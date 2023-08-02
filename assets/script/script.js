@@ -32,7 +32,7 @@ document.querySelector('.btn').addEventListener('click', function(){
     if(name.value.trim() === ""|| email.value.trim() === ""||subject.value.trim() === ""||comment.value.trim()){
         alert('Name field cannot be emptied');
     } else{
-console.log('Message saved.')
+alert('Message saved.')
     }
 
 
